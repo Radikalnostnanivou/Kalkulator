@@ -10,6 +10,10 @@ public class Main {
 		while(true) {
 			String naredba;
 			naredba = s1.nextLine();
+			if(naredba.equals("")) {
+				continue;
+			}
+			
 			if(naredba.equals("exit") || naredba.equals("kraj")) {
 				break;
 			}
