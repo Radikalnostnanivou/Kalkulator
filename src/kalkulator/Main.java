@@ -17,6 +17,14 @@ public class Main {
 			if(naredba.equals("exit") || naredba.equals("kraj")) {
 				break;
 			}
+			
+			String[] lista = naredba.split(" ");
+			if(lista.length != 3) {
+				System.out.println("Ulaz nema 3 parametra.");
+				continue;
+			}
+			
+			
 		}
 	}
 
