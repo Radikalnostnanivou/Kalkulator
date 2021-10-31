@@ -23,9 +23,17 @@ public class Main {
 				System.out.println("Ulaz nema 3 parametra.");
 				continue;
 			}
-			
+			int x = Integer.parseInt(lista[0]);
+			int y = Integer.parseInt(lista[2]);
+			if(lista[1].equals("+")) {
+				addition(x, y);
+			}else {
+				System.out.println("Unsupported operation.");
+			}
 			
 		}
 	}
-
+	public static void addition(int a, int b) {
+		System.out.println(a + b);
+	}
 }
