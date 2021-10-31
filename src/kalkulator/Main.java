@@ -27,13 +27,20 @@ public class Main {
 			int y = Integer.parseInt(lista[2]);
 			if(lista[1].equals("+")) {
 				addition(x, y);
+			}else if(lista[1].equals("-")) {
+				substraction(x, y);
 			}else {
 				System.out.println("Unsupported operation.");
 			}
 			
 		}
 	}
+	
 	public static void addition(int a, int b) {
 		System.out.println(a + b);
+	}
+	
+	public static void substraction(int a, int b) {
+		System.out.println(a - b);
 	}
 }
