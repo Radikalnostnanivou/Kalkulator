@@ -26,12 +26,14 @@ public class Main {
 			int x = Integer.parseInt(lista[0]);
 			int y = Integer.parseInt(lista[2]);
 			if(lista[1].equals("+")) {
-				System.out.println(x + y);
+				addition(x, y);
 			}else {
 				System.out.println("Unsupported operation.");
 			}
 			
 		}
 	}
-
+	public static void addition(int a, int b) {
+		System.out.println(a + b);
+	}
 }
